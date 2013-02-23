@@ -1,0 +1,5 @@
+[submodule "modules/sudo"]
+	path = modules/sudo
+	url = git://github.com/saz/puppet-sudo.git
+
+
