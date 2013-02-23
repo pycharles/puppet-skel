@@ -4,5 +4,6 @@ class role_common {
   sudo::conf {'wheel':
     content => '%wheel ALL=(ALL) NOPASSWD: ALL',
   }
+  class { 'ntp': }
 }
 
