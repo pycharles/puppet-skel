@@ -7,3 +7,6 @@ node default {
   include role_common
 }
 
+node puppet01 {
+  include role_puppetslave
+}

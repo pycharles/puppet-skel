@@ -4,6 +4,12 @@ class role_common {
   sudo::conf {'wheel':
     content => '%wheel ALL=(ALL) NOPASSWD: ALL',
   }
-  class { 'ntp': }
+  class { 'ntp': 
+    server_list => [ 'puppet' ],
+  }
 }
 
+class role_puppetslave inherits role_common {
+  class { 'ntp': }
+
+}
